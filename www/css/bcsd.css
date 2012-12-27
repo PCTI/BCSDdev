@@ -1,0 +1,457 @@
+
+	html {
+		margin:0;
+		padding:0;
+	}
+	body {
+		background:#094470 url(../img/agendabg.png) no-repeat fixed;
+		background-size:768px 1024px;
+		font-size:75%;
+		font-family:"Trebuchet MS", Tahoma, Helvetica, Arial, Geneva, sans-serif;
+		margin:0;
+		padding:0;
+	}
+		#wrapper {
+			position:relative;
+			font:normal 1.167em/1.667em Tahoma, Verdana, Arial, Geneva, sans-serif;
+			text-align:left;
+			width:768px;
+			height:1024px;
+			margin:0;
+			padding:0;
+		}
+
+
+	/* =Backbutton
+	-------------------------*/
+	#btnback {
+		background:transparent url(../img/btnback.png) no-repeat 0 0;
+		background-size:71px 25px;
+		height:25px;
+		width:71px;
+		position:absolute;
+		top:10px;
+		left:74px;
+		border:0;
+		text-indent:-10000px;
+	}
+
+	/* =Periodtabs
+	-------------------------*/
+	#holder {
+		display:table;
+		position:absolute;
+		top:19px;
+		left:199px;
+	}
+	#periodtabs {
+		background:transparent;
+		height:25px;
+		width:377px;
+		margin-bottom:0;
+		list-style-type:none;
+		white-space:nowrap;
+		display:table-row;
+	}
+		#periodtabs li {
+			color:#fff;
+			margin:0 10px 0 0;
+			height:25px;
+			width:45px;
+			float:left;
+			display:inline;
+		}
+			#periodtabs li a {
+				background:none;
+				font:bold 1.143em/39px Verdana, Helvetica, Arial, Geneva, sans-serif;
+				color:#fff;
+				display:block;
+				height:25px;
+				padding:0;
+			}
+			#periodtabs li a:link {
+				text-decoration:none;
+			}
+
+
+	/* =Sidebar
+	-------------------------*/
+	#sidebar {
+		position:absolute;
+		top:96px;
+		right:0;
+		margin:0;
+		padding:0;
+		text-align:center;
+		width:239px;
+	}
+		#sidebar h2 {
+			background:#ba6464 url(../img/header-students.png) no-repeat 0 0;
+			background-size:229px 16px;
+			display:block;
+			width:229px;
+			height:16px;
+			line-height:16px;
+			margin:4px auto 0 auto;
+			padding:0;
+			text-indent:-10000px;
+		}
+	#studentlist {
+		height:888px;
+		width:239px;
+		overflow:auto;
+		-webkit-overflow-scrolling:touch;
+	}
+		#studentlist a.student {
+			width:119px;
+			height:50px;
+			text-align:center;
+			display:block;
+			float:left;
+			text-decoration:none;
+			border:0;
+			margin:5px 0 0 0;
+		}
+		#studentlist a.student:active {
+			outline:0;
+		}
+			#studentlist a.student span {
+				position:relative;
+			}
+				studentlist a.student span img {
+					position:absolute;
+					top:0;
+					left:0;
+				}
+				#studentlist a.student span p {
+					font-family:"Trebuchet MS", Tahoma, Helvetica, Arial, Geneva, sans-serif;
+					color:#7a0606;
+					font-size:16px;
+					line-height:16px;
+					margin-top:-26px;
+				}
+
+
+	/* =Content
+	-------------------------*/
+	#contentwrapper {
+	
+	}
+	#content {
+		position:absolute;
+		/*top:45px;*/
+		left:74px;
+		top:19px;
+		/*left:199px;*/
+		margin:0;
+		padding:0;
+		text-align:center;
+		width:455px;
+	}
+		#content #tabs {
+			border:0;
+			-webkit-border-radius:0;
+			background:transparent;
+			margin:0;
+			padding:0;
+			text-align:left;
+		}
+			#content #tabs #tabsul {
+				border:0;
+				-webkit-border-radius:0;
+				background:transparent;
+				margin:0 0 0 125px;
+				padding:0;
+			}
+					#content #tabs #tabsul .tabsli {
+						border:0;
+						-webkit-border-radius:0;
+						background:transparent;
+						margin:0 10px 0 0;
+						padding:0;
+						width:45px;
+						height:26px;
+					}
+						#content #tabs #tabsul .ui-state-default {
+							border:0;
+							-webkit-border-radius:0;
+							margin:0 10px 0 0;
+							padding:0;
+							width:45px;
+							height:26px;
+							display:block;
+							text-indent:-10000px;
+						}
+						#content #tabs #tabsul .ui-state-default a#ui-id-1 {
+							background:transparent url(../img/period1.png) no-repeat 0 0;
+							background-size:45px 26px;
+							width:45px;
+							height:26px;
+						}
+						#content #tabs #tabsul .ui-state-default a#ui-id-2 {
+							background:transparent url(../img/period2.png) no-repeat 0 0;
+							background-size:45px 26px;
+							width:45px;
+							height:26px;
+						}
+						#content #tabs #tabsul .ui-state-default a#ui-id-3 {
+							background:transparent url(../img/period3.png) no-repeat 0 0;
+							background-size:45px 26px;
+							width:45px;
+							height:26px;
+						}
+						#content #tabs #tabsul .ui-state-default a#ui-id-4 {
+							background:transparent url(../img/period4.png) no-repeat 0 0;
+							background-size:45px 26px;
+							width:45px;
+							height:26px;
+						}
+						#content #tabs #tabsul .ui-state-default a#ui-id-5 {
+							background:transparent url(../img/period5.png) no-repeat 0 0;
+							background-size:45px 26px;
+							width:45px;
+							height:26px;
+						}
+						#content #tabs #tabsul .ui-state-default a#ui-id-6 {
+							background:transparent url(../img/period6.png) no-repeat 0 0;
+							background-size:45px 26px;
+							width:45px;
+							height:26px;
+						}
+						#content #tabs #tabsul .ui-state-default a {
+							outline:0;
+						}
+						#content #tabs #tabsul .ui-state-default a:hover, 
+						#content #tabs #tabsul .ui-state-default a:active,
+						#content #tabs #tabsul .ui-state-default a:focus, {
+							outline:0;
+						}
+						#content #tabs #tabsul .ui-tabs-active {
+							border:0;
+							-webkit-border-radius:0;
+							background:transparent url(../img/period1-active.png) no-repeat 0 0;
+							background-size:45px 26px;
+							margin:0 10px 0 0;
+							padding:0;
+							width:45px;
+							height:26px;
+							display:block;
+							text-indent:-10000px;
+							outline:0;
+						}
+						#content #tabs #tabsul .ui-tabs-active a#ui-id-1 {
+							background:transparent url(../img/period1-active.png) no-repeat 0 0;
+							background-size:45px 26px;
+							width:45px;
+							height:26px;
+						}
+						#content #tabs #tabsul .ui-tabs-active a#ui-id-2 {
+							background:transparent url(../img/period2-active.png) no-repeat 0 0;
+							background-size:45px 26px;
+							width:45px;
+							height:26px;
+						}
+						#content #tabs #tabsul .ui-tabs-active a#ui-id-3 {
+							background:transparent url(../img/period3-active.png) no-repeat 0 0;
+							background-size:45px 26px;
+							width:45px;
+							height:26px;
+						}
+						#content #tabs #tabsul .ui-tabs-active a#ui-id-4 {
+							background:transparent url(../img/period4-active.png) no-repeat 0 0;
+							background-size:45px 26px;
+							width:45px;
+							height:26px;
+						}
+						#content #tabs #tabsul .ui-tabs-active a#ui-id-5 {
+							background:transparent url(../img/period5-active.png) no-repeat 0 0;
+							background-size:45px 26px;
+							width:45px;
+							height:26px;
+						}
+						#content #tabs #tabsul .ui-tabs-active a#ui-id-6 {
+							background:transparent url(../img/period6-active.png) no-repeat 0 0;
+							background-size:45px 26px;
+							width:45px;
+							height:26px;
+						}
+						#content #tabs #tabsul .ui-tabs-active a {
+							outline:0;
+						}
+						#content #tabs #tabsul .ui-tabs-active a:hover, 
+						#content #tabs #tabsul .ui-tabs-active a:active,
+						#content #tabs #tabsul .ui-tabs-active a:focus, {
+							outline:0;
+						}
+			#content #tabs #tabs-1,
+			#content #tabs #tabs-2,
+			#content #tabs #tabs-3,
+			#content #tabs #tabs-4,
+			#content #tabs #tabs-5,
+			#content #tabs #tabs-6 {
+				height:958px;
+				width:455px;
+				overflow:hidden;
+				margin:0;
+				padding:0;
+			}
+				#content #tabs .thetabs #section-lessonplan div {
+					height:543px;
+					width:445px;
+					position:relative;
+					overflow:auto;
+					-webkit-overflow-scrolling:touch;
+					margin:0;
+					padding:0;
+					display:block;
+					background:transparent url(../img/linesbg.png) repeat-y 0 0;
+					background-size:445px 22px;
+				}
+					#content #tabs .thetabs #section-lessonplan div.subsection {
+						background:#ccc;
+						color:#fff;
+						width:24px;
+						height:200px;
+						/*-webkit-transform: rotate(-90deg);*/
+						position:absolute;
+						top:0;
+						left:0;
+						margin:0;
+						padding:0;
+					}
+						#content #tabs .thetabs #section-lessonplan div.subsection span {
+							-webkit-transform: rotate(-90deg);
+							background:red;
+							display:block;
+							position:absolute;
+							top:15px;
+							left:-10px;
+						}
+					#content #tabs .thetabs #section-lessonplan h2 {
+						background:#ba6464 url(../img/header-lessonplan.png) no-repeat 0 0;
+						background-size:445px 16px;
+						display:block;
+						width:445px;
+						height:16px;
+						line-height:16px;
+						margin:4px 0 0 0;
+						padding:0;
+						text-indent:-10000px;
+					}
+					#content #tabs .thetabs #section-lessonplan div p,
+					#content #tabs .thetabs #section-lessonplan div h3,
+					#content #tabs .thetabs #section-lessonplan div ol {
+						font-family:"Trebuchet MS", Tahoma, Helvetica, Arial, Geneva, sans-serif;
+						font-size:16px;
+						line-height:22px;
+						margin:0;
+					}
+				#content #tabs .thetabs #section-classwork {
+					height:170px;
+					width:445px;
+					background:transparent url(../img/linesbg.png) repeat-y 0 0;
+					background-size:445px 22px;
+					overflow:auto;
+					-webkit-overflow-scrolling:touch;
+				}
+					#content #tabs .thetabs #section-classwork h2 {
+						background:#ba6464 url(../img/header-classwork.png) no-repeat 0 0;
+						background-size:445px 16px;
+						display:block;
+						width:445px;
+						height:16px;
+						line-height:16px;
+						margin:4px 0 0 0;
+						padding:0;
+						text-indent:-10000px;
+					}
+					#content #tabs .thetabs #section-classwork div p,
+					#content #tabs .thetabs #section-classwork div h3,
+					#content #tabs .thetabs #section-classwork div ol {
+						font-family:"Trebuchet MS", Tahoma, Helvetica, Arial, Geneva, sans-serif;
+						font-size:16px;
+						line-height:22px;
+						margin:0;
+					}
+				#content #tabs .thetabs #section-homework {
+					height:155px;
+					width:445px;
+					background:transparent url(../img/linesbg.png) repeat-y 0 0;
+					background-size:445px 22px;
+					overflow:auto;
+					-webkit-overflow-scrolling:touch;
+				}
+					#content #tabs .thetabs #section-homework h2 {
+						background:#ba6464 url(../img/header-homework.png) no-repeat 0 0;
+						background-size:445px 16px;
+						display:block;
+						width:445px;
+						height:16px;
+						line-height:16px;
+						margin:4px 0 0 0;
+						padding:0;
+						text-indent:-10000px;
+					}
+				#content #tabs .thetabs #section-login {
+					height:959px;
+					width:445px;
+					background:transparent;
+					text-align:center;
+					overflow:auto;
+					-webkit-overflow-scrolling:touch;
+				}
+					#content #tabs .thetabs #section-login h2 {
+						background:#ba6464 url(../img/header-login.png) no-repeat 0 0;
+						background-size:445px 16px;
+						display:block;
+						width:445px;
+						height:16px;
+						line-height:16px;
+						margin:4px 0 0 0;
+						padding:0;
+						text-indent:-10000px;
+					}
+				
+			
+				#content #tabs .thetabs #section-login div#loginemail {
+					margin:30px 0 0 0;
+				}
+				#content #tabs .thetabs #section-login div#loginemail,
+				#content #tabs .thetabs #section-login div#loginpassword {
+					font-family:"Trebuchet MS", Tahoma, Helvetica, Arial, Geneva, sans-serif;
+					font-size:16px;
+					line-height:22px;
+				}
+				#content #tabs .thetabs #section-login #loginbutton {
+					background:transparent url(../img/btn-login.png) no-repeat 0 0;
+					background-size:61px 32px;
+					display:block;
+					width:61px;
+					height:32px;
+					margin:0 auto;
+					padding:0;
+					text-indent:-10000px;
+					border:0;
+				}
+				#content #tabs .thetabs #section-login .inputs input {
+					border:3px solid #7a0606;
+					border-radius:8px;
+					height:32px;
+					width:300px;
+					margin:0 0 20px 0;
+					padding:3px;
+					font-family:"Trebuchet MS", Tahoma, Helvetica, Arial, Geneva, sans-serif;
+					font-size:26px;
+					line-height:26px;
+					text-align:center;
+				}
+
+			
+	#content #tabs .thetabs #section-lessonplan div a,
+	#content #tabs .thetabs #section-classwork div a,
+	#content #tabs .thetabs #section-homework div a {
+		text-decoration:underline;
+	}
+
+
+
