@@ -15,8 +15,12 @@ function Screenshot() {
 /**
  * Save the screenshot to the user's Photo Library
  */
-Screenshot.prototype.saveScreenshot = function() {
-    Cordova.exec(null, null,"Screenshot","saveScreenshot",[]);
+Screenshot.prototype.saveScreenshot = function( returnBase64, successCallbackString) {
+    Cordova.exec("Screenshot.saveScreenshot", returnBase64, successCallbackString, [] );
+};
+
+Screenshot.prototype.saveScreenshotAsFile = function( fileName, successCallbackString, returnBase64 ) {
+    Cordova.exec("Screenshot.saveScreenshotAsFile", fileName, successCallbackString, returnBase64, [] );
 };
 
 Cordova.addConstructor(function()
@@ -25,5 +29,5 @@ Cordova.addConstructor(function()
                         {
                         window.plugins = {};
                         }
-                        window.plugins.screenShot = new Screenshot();
+                        window.plugins.Screenshot = new Screenshot();
                         });
