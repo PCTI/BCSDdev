@@ -1,1 +1,1661 @@
-<!DOCTYPE html><html lang="en">	<head runat="server">		<meta charset="utf-8">		<meta name="description" content="Sam Hart for Chairman, Macon, GA">		<title>Bibb County School District</title>		<meta name="keywords" content="Bibb County School District">		<meta name="viewport" content="width=768, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />		<meta name="apple-mobile-web-app-capable" content="yes" />		<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />		<link rel="stylesheet" href="css/reset.css">		<link rel="stylesheet" href="css/text.css">            <link rel="stylesheet" media="all and (orientation:portrait)" href="css/bcsd.css">                <link rel="stylesheet" media="all and (orientation:landscape)" href="css/bcsd-landscape.css">		<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png" />		<link rel="stylesheet" href="css/jquery-ui.css" />                <script src="cordova-2.2.0.js"></script>		<script src="js/jquery-1.8.2.js"></script>		<script src="js/jquery-ui.js"></script>                                        <script type="text/javascript" charset="utf-8">                                                // Wait for Cordova to load                        //                        document.addEventListener("deviceready", onDeviceReady, false);                                                // Cordova is ready                        //                        function onDeviceReady() {                            var element = document.getElementById('deviceProperties');                                                        element.innerHTML = 'Device Name: '     + device.name     + '<br />' +                            'Device Cordova: '  + device.cordova + '<br />' +                            'Device Platform: ' + device.platform + '<br />' +                            'Device UUID: '     + device.uuid     + '<br />' +                             'Device Version: '  + device.version  + '<br />';                            window.plugins.Screenshot.saveScreenshot();                        }                                                </script>                            <script src="js/ExternalScreen.js"></script>                    <script type="text/javascript">                                                function onBodyLoad()                        {                            document.addEventListener("deviceready", onDeviceReady, false);                            window.plugins.Screenshot.saveScreenshot();                        }                                                function onDeviceReady()                        {                            PGExternalScreen.setupScreenConnectionNotificationHandlers( resultHandler, errorHandler );                            window.plugins.Screenshot.saveScreenshot();                        }                                                function resultHandler (result) {                            //dislpay an alert using a timeout so that it doesn't block loading of the webView content                            setTimeout( function() { alert("SUCCESS: \r\n"+result) }, 100 );                        }                                                function errorHandler (error) {                            alert("ERROR: \r\n"+error);                        }                                                </script>		<script>		$(function() {		   $( "#tabs" ).tabs();		});		</script>		<script>		    // increase the default animation speed to exaggerate the effect			$.fx.speeds._default = 1000;			$(function() {			$( "#dialog" ).dialog({				autoOpen: false,				show: "drop",				hide: "drop",				modal: true,				width: 580,				height: 434			});			$( ".opener" ).click(function() {				$( "#dialog" ).dialog( "open" );					return false;				});			});		</script>            <script>                                // increase the default animation speed to exaggerate the effect                                $.fx.speeds._default = 1000;                                $(function() {                                    $( "#dialog1" ).dialog({                                                                                autoOpen: false,                                                                                show: "drop",                                                                                hide: "drop",                                                                                modal: true,                                                                                width: 580,                                                                                height: 434                                                                                });                                    $( ".opener1" ).click(function() {                                                                              $( "#dialog1" ).dialog( "open" );                                                                              return false;                                                                              });                                    });                                </script>                        <script>                                // increase the default animation speed to exaggerate the effect                                $.fx.speeds._default = 1000;                                $(function() {                                    $( "#dialog2" ).dialog({                                                                                  autoOpen: false,                                                                                  show: "drop",                                                                                  hide: "drop",                                                                                  modal: true,                                                                                  width: 580,                                                                                  height: 434                                                                                  });                                    $( ".opener2" ).click(function() {                                                                                $( "#dialog2" ).dialog( "open" );                                                                                return false;                                                                                });                                    });                                </script>                        <script>                                // increase the default animation speed to exaggerate the effect                                $.fx.speeds._default = 1000;                                $(function() {                                    $( "#dialog3" ).dialog({                                                                                  autoOpen: false,                                                                                  show: "drop",                                                                                  hide: "drop",                                                                                  modal: true,                                                                                  width: 580,                                                                                  height: 434                                                                                  });                                    $( ".opener3" ).click(function() {                                                                                $( "#dialog3" ).dialog( "open" );                                                                                return false;                                                                                });                                    });                                </script>            <script>                                // increase the default animation speed to exaggerate the effect                                $.fx.speeds._default = 1000;                                $(function() {                                    $( "#dialog4" ).dialog({                                                                                  autoOpen: false,                                                                                  show: "drop",                                                                                  hide: "drop",                                                                                  modal: true,                                                                                  width: 580,                                                                                  height: 434                                                                                  });                                    $( ".opener4" ).click(function() {                                                                                $( "#dialog4" ).dialog( "open" );                                                                                return false;                                                                                });                                    });                                </script>            <script>                                // increase the default animation speed to exaggerate the effect                                $.fx.speeds._default = 1000;                                $(function() {                                    $( "#dialog5" ).dialog({                                                                                  autoOpen: false,                                                                                  show: "drop",                                                                                  hide: "drop",                                                                                  modal: true,                                                                                  width: 580,                                                                                  height: 434                                                                                                                         });                                    $( ".opener5" ).click(function() {                                                                                $( "#dialog5" ).dialog( "open" );                                                                                                                    return false;                                                                                });                                    });                                </script>            <script>                                // increase the default animation speed to exaggerate the effect                                $.fx.speeds._default = 1000;                                $(function() {                                    $( "#dialog6" ).dialog({                                                                                  autoOpen: false,                                                                                  show: "drop",                                                                                  hide: "drop",                                                                                  modal: true,                                                                                  width: 580,                                                                                  height: 434                                                                                  });                                    $( ".opener6" ).click(function() {                                                                                $( "#dialog6" ).dialog( "open" );                                                                                return false;                                                                                });                                    });                                </script>                        <script type="text/javascript" language="JavaScript">                                function clickedButton()                                {                                        window.location = 'index.html'                    document.getElementById('password').value = ""                                                        }                                </script>                                                            <script type="text/javascript">                                                function onBodyLoad()                        {                            document.addEventListener("deviceready", onDeviceReady, false);                        }                                                function onDeviceReady()                        {                            PGExternalScreen.setupScreenConnectionNotificationHandlers( resultHandler, errorHandler );                        }                                                function resultHandler (result) {                            //dislpay an alert using a timeout so that it doesn't block loading of the webView content                            setTimeout( function() { alert("SUCCESS: \r\n"+result) }, 100 );                        }                                                function errorHandler (error) {                            alert("ERROR: \r\n"+error);                        }                                                </script>	</head>	<body onload="onBodyLoad()">		<div id="wrapper">			<input id="btnback" type="button" value="Login" onClick="clickedButton()"/>			<!--<a id="btnback" href="#back"><img src="img/btnback.png" height="25" width="71" alt="back button"></a>-->			<!--<div id="holder">				<ul id="periodtabs" class="menu">					<li><a href="#nogo"><img src="img/period1.png" width="45" height="25" alt="1st Period"></a></li>					<li><a href="#nogo"><img src="img/period2.png" width="45" height="25" alt="2nd Period"></a></li>					<li><a href="#nogo"><img src="img/period3.png" width="45" height="25" alt="3rd Period"></a></li>					<li><a href="#nogo"><img src="img/period4.png" width="45" height="25" alt="4th Period"></a></li>					<li><a href="#nogo"><img src="img/period5.png" width="45" height="25" alt="5th Period"></a></li>					<li><a href="#nogo"><img src="img/period6.png" width="45" height="25" alt="6th Period"></a></li>				</ul>			</div>-->			<!-- end #menu -->						<div id="contentwrapper">				<div id="content">					<div id="tabs">						<ul id="tabsul">							<li id="tab1" class="tabsli"><a href="#tabs-1">1st</a></li>							<li class="tabsli"><a href="#tabs-2">2nd</a></li>							<li class="tabsli"><a href="#tabs-3">3rd</a></li>							<li class="tabsli"><a href="#tabs-4">4th</a></li>							<li class="tabsli"><a href="#tabs-5">5th</a></li>                                                        <li class="tabsli"><a href="#tabs-6">6th</a></li>						</ul>						<div class="thetabs" id="tabs-1">							<div id="section-lessonplan">								<h2 class="titles">Lesson Plan</h2>								<div>									<!--<div class="subsection">										<span>Goals</span>									</div>-->									<h3>Math Kindergarten Common Core Standards</h3>                                    <br />									<p><strong>MCCK.NBT.1</strong> Compose and decompose numbers from 11 to 19 into ten ones and some further ones, e.g., by using objects or drawings, and record each composition or decomposition by a drawing or equation (e.g., 18 = 10 + 8); understand that these numbers are composed of ten ones and one, two, three, four, five, six, seven, eight, or nine ones.</p>                                    <p><strong>MCCK.CC.4 a. </strong>When counting objects, say the number names in the standard order, pairing each object with one and only one number name and each number name with one and only one object.</p>                                                                        <p><strong>MCCK.CC.6 </strong>Identify whether the number of objects in one group is greater than, less than, or equal to the number of objects in another group, e.g., by using matching and counting strategies. </p>                                    <br />                                                                        <h3>Number Corner</h3>									<ol>										<li>Create a number on a ten frame.</li>                                        <li>Invite students to discuss and share everything they notice about the number.                                            Example if the number 8 is on the 10 frame.                                            3 more than 5                                            2 less than 10                                            4 groups of 2                                             2 groups of 3 and 2 more 3 groups of 2 and                                            2 more 2 groups of 4 </li>										<li>Riddle for “8”- I am a number. I am more than 5. If you give me 2 more dots I would make a 10? I am a 1-digit number. What number am I?</li>									</ol>									<br>									<br>									<h3>Materials:</h3>									<p>Riddle Me This? task cards, Single or Double Ten Frame, Counters, iPad</p>									<br>                                								</div>							</div>							<div id="section-classwork">								<h2 class="titles">Classwork</h2>								<div>                                                                                                    <div id="dialog" title="Counting to 20">                                        <p><iframe src="http://www.showme.com/sma/embed/?s=lG8u2Wu&w=580&h=434" width="580" height="434" ></iframe></p>                                                                            </div>                                    <p class="icon">                                                                        <a class="opener">                                                                                <img src="img/movieplayer.png" width="22" height="22" alt="movie player icon"></a>                                                                        &nbsp; <a class="opener">Watch video on counting to 20</a>                                    									</p><br />																	</div>							</div>							<div id="section-homework">								<h2 class="titles">Homework</h2>								<div>									<p>Write numbers 0-20</p>								</div>							</div>						</div>						<div class="thetabs" id="tabs-2">							<div id="section-lessonplan">								<h2 class="titles">Lesson Plan</h2>								<div>									<!--<div class="subsection">										<span>Goals</span>									</div>-->                                    <h3><strong>Science 6 - 12 Common Core Standards</strong></h3>									                                    <p>College and Career Readiness Anchor Standards for Reading:</p>                                    <p><strong>Standard 7.</strong> Integrate and evaluate content presented in diverse media and formats, including visually and quantitatively, as well as in words.</p>                                    <p>College and Career Readiness Anchor Standards for Writing:</p>                                    <p><strong>Standard 6.</strong> Use technology, including the Internet, to produce and publish writing and to interact and collaborate with others.</p>                                    <p><strong>Standard 7.</strong> Conduct short as well as more sustained research projects based on focused questions, demonstrating understanding of the subject under investigation.</p>									<br>                                                                                                            <p><strong>Overview:</strong></p>                                    <p>Understanding how the world around them can be organized or classified is an important concept for students. This lesson starts with a general discussion about classification and then moves to a description of scientific classification. Using the Linnaean system, the most widely used classification system in the scientific community, students will develop mind maps as they conduct research on different kingdoms and the organisms classified within them.</p>                                    <br />                                    <p>Mind maps have an organic appearance, like a tree with many branches. They are quick to create because the structure is always the same and Inspiration’s mind mapping tools are efficient to use. With a central trunk (main idea), the thickest branches are main subtopics, and the thinner branches are subtopics of those. These visual cues help students as they mind map prior knowledge and build new knowledge.</p>                                    <br />                                    <p>                                    <p><strong>Lesson:</srong></p><br />                                        <p>1. Begin by asking students if they know what it means to classify and how they might classify things in their everyday lives. For example, how might they classify forms of writing, nations of the world or types of lab equipment?</p><br />                                        <p> 2. Quickly classify everyday things from one of the categories you discussed. For example, type “Lab Equipment” in the middle and fill in three categories, such as “protective gear,” “measuring devices” and “energy sources.”</p><br />                                        <p>3. Explain that students will be learning about a system for classifying organisms (living things). Tell them that there are different systems for classifying organisms, but that a system originally developed by a scientist named Carl Linnaeus is the most common. Later, scientists expanded upon his original system, to arrive at the six kingdoms of life we have today. Explain that the science of classifying living things is known as taxonomy.</p><br />                                        <p>4. Students will be preparing mind maps similar to the one that describes characteristics of the kingdoms and examples of organisms classified in them.</p><br />                                        <p>5. Have students begin the research process using online sources or textbooks. As they gather information, they can use it to complete the mind map.</p><br />                                                                                <p>6. Lead a class discussion about the students’ findings. What interesting discoveries did they                                        make? Why is classification very important for scientists?</p><br />                                        </p>									                                                                                                            <h3>Materials:</h3>									<p>Textbook, Mind Maps, iPad</p>									<br>																	</div>							</div>							<div id="section-classwork">								<h2 class="titles">Classwork</h2>								<div>                                    <div id="dialog1" title="Animal Classifications">                                        <p><iframe width="500" height="375" src="http://www.schooltube.com/embed/8fb125d2cf121969e06b" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe></p>                                                                            </div>                                    <p class="icon">                                                                        <a class="opener1">                                                                                <img src="img/movieplayer.png" width="22" height="22" alt="movie player icon"></a>                                                                        &nbsp; <a class="opener1">Watch video on Animal Classifications</a>                                    									</p>									<p>Complete mind maps</p>																	</div>							</div>							<div id="section-homework">								<h2 class="titles">Homework</h2>								<div>									<p>Write an essay about the kingdoms and organisms  identified in class. </p>								</div>							</div>						</div>						<div class="thetabs" id="tabs-3">							<div id="section-lessonplan">								<h2 class="titles">Lesson Plan</h2>								<div>									<!--<div class="subsection">										<span>Goals</span>									</div>-->									<h3>Social Studies 6 - 12 Common Core Standards</h3>									<p>                                    Students will research a civilization and analyze its historical influence.</p>                                    <p><strong>Common Core State Standards:</strong></p>                                    <p>College and Career Readiness Anchor Standards for Reading:<br />                                    Standard 7. Integrate and evaluate content presented in diverse media and formats, including visually and quantitatively, as well as in words.</p><br />                                    <p>College and Career Readiness Anchor Standards for Writing:<br />                                    Standard 1. Write arguments to support claims in an analysis of substantive topics or texts                                    using valid reasoning and relevant and sufficient evidence.<br />                                    Standard 6. Use technology, including the Internet, to produce and publish writing and to                                    ￼interact and collaborate with others.</p>																		<br>									<h3>Lesson:</h3>									<p>                                    1. Explain that students will be investigating many aspects of a civilization with the goal of describing its “legacy.” Ask students if they know what a legacy is, and be sure to clarify that one meaning of the word is something from the past that influences the future.<br />                                    2. Open the Legacy of a Civilization template and talk students through it so they understand the assignment; they will be conducting research focused on the civilization’s legacy and using the template to help them organize the information.<br />                                    3. Open the example file in this folder and talk the students through that, as well, so they know what is expected. Explain that they will be adding visual symbols, as well as text, to their diagrams. Adding symbols will help them and their readers to better understand and remember the content.<br />                                    4. Students can start writing their draft.                                    </p>									<br>									<h3>Materials:</h3>									<p>Textbook, iPad</p>									<br>								</div>							</div>							<div id="section-classwork">								<h2 class="titles">Classwork</h2>                                <div>                                                                                                                                                                                    <div id="dialog2" title="Civilization">                                        <p><iframe width="580" height="434" src="http://www.youtube-nocookie.com/embed/6PR6C4UeYU8" frameborder="0" allowfullscreen></iframe></p>                                                                            </div>                                    <p class="icon">                                                                        <a class="opener2">                                                                                <img src="img/movieplayer.png" width="22" height="22" alt="movie player icon"></a>                                                                        &nbsp; <a class="opener2">Watch video on ancient civilizations</a>                                    									</p><br />                                                                                                            <p>Write a short essay about the legacy of the civilization</p>									                                    								</div>                                							</div>							<div id="section-homework">								<h2 class="titles">Homework</h2>								<div>									<p>Create timelines of important developments in the history of the civilization. </p>								</div>							</div>						</div>						<div class="thetabs" id="tabs-4">							<div id="section-lessonplan">								<h2 class="titles">Lesson Plan</h2>								<div>									<!--<div class="subsection">										<span>Goals</span>									</div>-->									<h3><strong>Writing 6 -12 Common Core State Standards:</strong></h3>									<p>                                    Writing Standards for Grades 6-12 in English Language Arts and Literacy in History/Social Studies, Science, and Technical Subjects<br />                                                                       <strong> Standard 3.</strong> Write narratives to develop real or imagined experiences or events using effective technique, well-chosen details and well-structured event sequences.<br />                                    <strong>Standard 5. </strong>Develop and strengthen writing as needed by planning, revising, editing, rewriting, or trying a new approach.<br />                                    <strong>Standard 6.</strong> Use technology, including the Internet, to produce and publish writing and to interact and collaborate with others.</p>									<br>									<h3><strong>Lesson:</strong></h3>									<p>1. Explain that writing is a process involving many steps. Open the Writing Process template in this folder and discuss the steps with students in detail: prewriting, drafting, revising, editing and publishing.<br />                                    2. Explain that the best narrative writing is rich in specific details and dialogue.<br />                                                                        </p>									<br>									<h3>Materials:</h3>									<p>Textbook, worksheets, iPad</p>									<br>								</div>							</div>							<div id="section-classwork">								<h2 class="titles">Classwork</h2>								<div>									<p>                                    									                                    <div id="dialog3" title="Brainstorming">                                        <p><iframe width="580" height="434" src="http://www.youtube-nocookie.com/embed/DSnQLiwK62Y" frameborder="0" allowfullscreen></iframe></p>                                                                            </div>                                    <p class="icon">                                                                        <a class="opener3">                                                                                <img src="img/movieplayer.png" width="22" height="22" alt="movie player icon"></a>                                                                        &nbsp; <a class="opener3">Watch video on Brainstorming</a>                                    									</p><br />									</p>                                    <br />									<p>Read narratives to the class and include visuals such as “talking points” and “snapshots” from your diagrams.</p>																	</div>							</div>							<div id="section-homework">								<h2 class="titles">Homework</h2>								<div>									<p>                                    Write a one page non-fiction narrative about your own lives or fictional or historical narrative to demonstrate your knowledge of real persons or events.                                    Write a personal narrative for college applications, that is a “reflection” to explain what you learned from the experience or what the experience reveals about them.</p>																	</div>							</div>						</div>						<div class="thetabs" id="tabs-5">							<div id="section-classwork">								<h2 class="titles">Classwork</h2>								<div>									<p>                                    <div id="dialog4" title="The Solar System">                                        <p><iframe scrolling="yes" width="580" height="434" src="http://www.youtube-nocookie.com/embed/XrHMH94Mrk0" frameborder="0" allowfullscreen></iframe></p>                                                                            </div>                                    <p class="icon">                                                                        <a class="opener4">                                                                                <img src="img/movieplayer.png" width="22" height="22" alt="movie player icon"></a>                                                                        &nbsp; <a class="opener4">Watch video on Solar System</a>                                    									</p><br />                                                                                                           <p><strong>Complete eLearn Assignment</strong></p>                                                                        <p>                                    <div id="dialog5" title="Trip to Moon Article" >                                        <p>Attention wealthy nations and billionaires: A team of former NASA executives will fly you to the moon in an out-of-this-world commercial venture combining the wizardry of Apollo and the marketing of Apple.<p/>                                                                                <p>For a mere $1.5 billion, the business is offering countries the chance to send two people to the moon and back, either for research or national prestige. And if you are an individual with that kind of money to spare, you too can go the moon for a couple days.</p>                                                                                <p>Some space experts, though, are skeptical of the firm's financial ability to get to the moon. The venture called Golden Spike Co. was announced Thursday.</p>                                                                                <p>Dozens of private space companies have started up recently, but few if any will make it — just like in other fields — said Harvard astronomer Jonathan McDowell, who tracks launches worldwide.</p>                                                                                <p>"This is unlikely to be the one that will pan out," McDowell said.</p>                                                                                <p>NASA's last trip to the moon launched 40 years ago Friday. The United States is the only country that has landed people there, beating the Soviet Union in a space race to the moon that transfixed the world. But once the race ended, there has been only sporadic interest in the moon.</p>                                                                                                                                        </div>                                    <p class="icon">                                                                        <a class="opener5">                                                                                <img src="img/movieplayer.png" width="22" height="22" alt="movie player icon"></a>                                                                        &nbsp; <a class="opener5">Read Article</a>                                    									</p><br />                                    </p>                                    <p>                                    <div id="dialog6" title="Trip to Moon News Brief">                                        <p><iframe frameborder="0" scrolling="no" src="http://eplayer.clipsyndicate.com/embed/iframe?pf_id=1&show_title=0&va_id=3860137&windows=1" width="425" height="330"></iframe></p>                                                                            </div>                                    <p class="icon">                                                                        <a class="opener6">                                                                                <img src="img/movieplayer.png" width="22" height="22" alt="movie player icon"></a>                                                                        &nbsp; <a class="opener6">Watch video on Trip to Space</a>                                    									</p><br />									</p>																	</div>							</div>							<div id="section-homework">								<h2 class="titles">Homework</h2>								<div>                                    <p>                                                                                                            <p><a href="ibooks://the-beatles-yellow-submarine/id479687204?mt=11">Read Solar Sytem, pages 2 - 21</a></p>                                                                        <p>Complete worksheets 2 and 3 using <a href="astronomy://">the Pocket Universe</a></p>                                                                        <br />                                    									</p>								</div>							</div>						</div>						<div class="thetabs" id="tabs-6">														<div id="section-classwork">								<h2 class="titles">Classwork</h2>								<div>									<p>										<p class="icon"><a href="http://www.showme.com/sma/embed/?s=3JvrTeK">											<img src="img/movieplayer.png" width="22" height="22" alt="Movie Player icon"></a>											&nbsp; <a href="http://www.showme.com/sma/embed/?s=3JvrTeK">Watch a video on classifying triangles</a>										</p>									</p>									<p>Complete worksheets</p>									<br />                                    <ol>                                        <li><a href="javascript:PGExternalScreen.checkExternalScreenAvailable( resultHandler, errorHandler )">Check isExternalScreenAvailable</a></li>                                        <li><a href="javascript:PGExternalScreen.loadHTMLResource( 'astronomy://', resultHandler, errorHandler )">Load local file: astronomy</a></li>                                                                                <li><a href="javascript:PGExternalScreen.loadHTMLResource( 'http://www.youtube-nocookie.com/embed/XrHMH94Mrk0 ',resultHandler, errorHandler )">Load Video</a></li>                                        <li><a href="javascript:PGExternalScreen.loadHTML('                                                                                        <h2 class="titles">Lesson Plan</h2>                                                                                                                                  <h3><strong>Writing 6 -12 Common Core State Standards:</strong></h3>                                                                                        <p>                                            Writing Standards for Grades 6-12 in English Language Arts and Literacy in History/Social Studies, Science, and Technical Subjects<br />                                                                                        <strong> Standard 3.</strong> Write narratives to develop real or imagined experiences or events using effective technique, well-chosen details and well-structured event sequences.<br />                                            <strong>Standard 5. </strong>Develop and strengthen writing as needed by planning, revising, editing, rewriting, or trying a new approach.<br />                                            <strong>Standard 6.</strong> Use technology, including the Internet, to produce and publish writing and to interact and collaborate with others.</p>                                                                                                                                    <br>                                                                                        <h3><strong>Lesson:</strong></h3>                                                                                        <p>1. Explain that writing is a process involving many steps. Open the Writing Process template in this folder and discuss the steps with students in detail: prewriting, drafting, revising, editing and publishing.<br />                                            2. Explain that the best narrative writing is rich in specific details and dialogue.<br />                                                                                        </p>                                                                                        <br>                                                                                        <h3>Materials:</h3>                                                                                        <p>Textbook, worksheets, iPad</p>                                                                                        <br>', resultHandler, errorHandler )">Load Lesson Plan</a></li>                                        <li><a href="javascript:PGExternalScreen.invokeJavaScript('document.write(\'Hello BCSD Classroom Room\')', resultHandler, errorHandler )">Invoke JavaScript: document.write("hello BCSD")</a></li>                                    </ol>								</div>							</div>							<div id="section-homework">								<h2 class="titles">Homework</h2>								<div>                                                                         <p id="deviceProperties">Loading device properties...</p>									<p>Read Chapter 4</p>									<p>Study Section 4.1 &amp; Section 4.2 for quiz tomorrow</p>								</div>							</div>						</div>					</div>				</div>				<!-- end #content -->								<div id="sidebar">					<h2 class="titles">Students</h2>					<div id="studentlist">						<a class="student" href="#student1">							<span>								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">								<p>George A.</p>							</span>						</a>						<a class="student" href="#student2">							<span>								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">								<p>Tiffany A.</p>							</span>						</a>						<a class="student" href="#student1">							<span>								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">								<p>Billy C.</p>							</span>						</a>						<a class="student" href="#student2">							<span>								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">								<p>Dora E.</p>							</span>						</a>						<a class="student" href="#student1">							<span>								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">								<p>Jon E.</p>							</span>						</a>						<a class="student" href="#student2">							<span>								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">								<p>Sharon G.</p>							</span>						</a>						<a class="student" href="#student1">							<span>								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">								<p>Abigail I.</p>							</span>						</a>						<a class="student" href="#student2">							<span>								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">								<p>Doug J.</p>							</span>						</a>						<a class="student" href="#student1">							<span>								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">								<p>Candace J.</p>							</span>						</a>						<a class="student" href="#student2">							<span>								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">								<p>Crystal L.</p>							</span>						</a>						<a class="student" href="#student1">							<span>								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">								<p>Mike M.</p>							</span>						</a>						<a class="student" href="#student2">							<span>								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">								<p>Tammy M.</p>							</span>						</a>						<a class="student" href="#student1">							<span>								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">								<p>Will N.</p>							</span>						</a>						<a class="student" href="#student2">							<span>								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">								<p>Cindy Q.</p>							</span>						</a>						<a class="student" href="#student1">							<span>								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">								<p>Tyler R.</p>							</span>						</a>						<a class="student" href="#student2">							<span>								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">								<p>April R.</p>							</span>						</a>						<a class="student" href="#student1">							<span>								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">								<p>Zac S.</p>							</span>						</a>						<a class="student" href="#student2">							<span>								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">								<p>Tiffany S.</p>							</span>						</a>						<a class="student" href="#student1">							<span>								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">								<p>Jean T.</p>							</span>						</a>						<a class="student" href="#student2">							<span>								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">								<p>Gregg T.</p>							</span>						</a>						<a class="student" href="#student1">							<span>								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">								<p>Carl U.</p>							</span>						</a>						<a class="student" href="#student2">							<span>								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">								<p>Trisha V.</p>							</span>						</a>						<a class="student" href="#student1">							<span>								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">								<p>Grant V.</p>							</span>						</a>						<a class="student" href="#student2">							<span>								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">								<p>William W.</p>							</span>						</a>						<a class="student" href="#student1">							<span>								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">								<p>Frank W.</p>							</span>						</a>						<a class="student" href="#student2">							<span>								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">								<p>Lloyd W.</p>							</span>						</a>						<a class="student" href="#student1">							<span>								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">								<p>Peter W.</p>							</span>						</a>						<a class="student" href="#student2">							<span>								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">								<p>Sarah Y.</p>							</span>						</a>						<a class="student" href="#student1">							<span>								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">								<p>Joseph Y.</p>							</span>						</a>						<a class="student" href="#student2">							<span>								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">								<p>Sarah Z.</p>							</span>						</a>						<a class="student" href="#student1">							<span>								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">								<p>Isaiah A.</p>							</span>						</a>						<a class="student" href="#student2">							<span>								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">								<p>Mary D.</p>							</span>						</a>						<a class="student" href="#student1">							<span>								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">								<p>Jeremy F.</p>							</span>						</a>						<a class="student" href="#student2">							<span>								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">								<p>Martha G.</p>							</span>						</a>						<a class="student" href="#student1">							<span>								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">								<p>Eli M.</p>							</span>						</a>						<a class="student" href="#student2">							<span>								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">								<p>Deborah M.</p>							</span>						</a>						<a class="student" href="#student1">							<span>								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">								<p>Larry R.</p>							</span>						</a>						<a class="student" href="#student2">							<span>								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">								<p>Ruth S.</p>							</span>						</a>						<a class="student" href="#student1">							<span>								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">								<p>Roberto S.</p>							</span>						</a>						<a class="student" href="#student2">							<span>								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">								<p>Naomi T.</p>							</span>						</a>						<a class="student" href="#student1">							<span>								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">								<p>Dan T.</p>							</span>						</a>						<a class="student" href="#student2">							<span>								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">								<p>Jasmine W.</p>							</span>						</a>						<a class="student" href="#student1">							<span>								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">								<p>Adam W.</p>							</span>						</a>						<a class="student" href="#student2">							<span>								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">								<p>Brittany Y.</p>							</span>						</a>																		<!--a<br>						b<br>						c<br>						d<br>						e<br>						f<br>						g<br>						h<br>						i<br>						j<br>						k<br>						l<br>						m<br>						n<br>						o<br>						p<br>						q<br>						r<br>						s<br>						t<br>						u<br>						v<br>						w<br>						x<br>						y<br>						z<br>						a<br>						b<br>						c<br>						d<br>						e<br>						f<br>						g<br>						h<br>						i<br>						j<br>						k<br>						l<br>						m<br>						n<br>						o<br>						p<br>						q<br>						r<br>						s<br>						t<br>						u<br>						v<br>						w<br>						x<br>						y<br>						z-->					</div>				</div>				<!-- end #sidebar -->			</div>			<div class="clear"></div>		</div>		<!-- end #wrapper -->	</body></html>
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head runat="server">
+
+		<meta charset="utf-8">
+
+		<meta name="description" content="Sam Hart for Chairman, Macon, GA">
+
+		<title>Bibb County School District</title>
+
+		<meta name="keywords" content="Bibb County School District">
+
+		<meta name="viewport" content="width=768, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+
+		<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reset.css">
+
+		<link rel="stylesheet" href="css/text.css">
+
+            <link rel="stylesheet" media="all and (orientation:portrait)" href="css/bcsd.css">
+                <link rel="stylesheet" media="all and (orientation:landscape)" href="css/bcsd-landscape.css">
+
+		<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png" />
+
+		<link rel="stylesheet" href="css/jquery-ui.css" />
+        
+        <script src="cordova-2.2.0.js"></script>
+
+		<script src="js/jquery-1.8.2.js"></script>
+
+		<script src="js/jquery-ui.js"></script>
+        
+        <script src="js/Screenshot.js"></script>
+                    
+        <script src="js/ExternalScreen.js"></script>
+                   
+
+		<script>
+
+		$(function() {
+
+		   $( "#tabs" ).tabs();
+
+		});
+
+		</script>
+
+		<script>
+
+		    // increase the default animation speed to exaggerate the effect
+
+			$.fx.speeds._default = 1000;
+
+			$(function() {
+
+			$( "#dialog" ).dialog({
+
+				autoOpen: false,
+
+				show: "drop",
+
+				hide: "drop",
+
+				modal: true,
+
+				width: 580,
+
+				height: 434
+
+			});
+
+			$( ".opener" ).click(function() {
+
+				$( "#dialog" ).dialog( "open" );
+
+					return false;
+
+				});
+
+			});
+
+		</script>
+            <script>
+                
+                // increase the default animation speed to exaggerate the effect
+                
+                $.fx.speeds._default = 1000;
+                
+                $(function() {
+                  
+                  $( "#dialog1" ).dialog({
+                                        
+                                        autoOpen: false,
+                                        
+                                        show: "drop",
+                                        
+                                        hide: "drop",
+                                        
+                                        modal: true,
+                                        
+                                        width: 580,
+                                        
+                                        height: 434
+                                        
+                                        });
+                  
+                  $( ".opener1" ).click(function() {
+                                       
+                                       $( "#dialog1" ).dialog( "open" );
+                                       
+                                       return false;
+                                       
+                                       });
+                  
+                  });
+                
+                </script>
+            
+            <script>
+                
+                // increase the default animation speed to exaggerate the effect
+                
+                $.fx.speeds._default = 1000;
+                
+                $(function() {
+                  
+                  $( "#dialog2" ).dialog({
+                                         
+                                         autoOpen: false,
+                                         
+                                         show: "drop",
+                                         
+                                         hide: "drop",
+                                         
+                                         modal: true,
+                                         
+                                         width: 580,
+                                         
+                                         height: 434
+                                         
+                                         });
+                  
+                  $( ".opener2" ).click(function() {
+                                        
+                                        $( "#dialog2" ).dialog( "open" );
+                                        
+                                        return false;
+                                        
+                                        });
+                  
+                  });
+                
+                </script>
+            
+            <script>
+                
+                // increase the default animation speed to exaggerate the effect
+                
+                $.fx.speeds._default = 1000;
+                
+                $(function() {
+                  
+                  $( "#dialog3" ).dialog({
+                                         
+                                         autoOpen: false,
+                                         
+                                         show: "drop",
+                                         
+                                         hide: "drop",
+                                         
+                                         modal: true,
+                                         
+                                         width: 580,
+                                         
+                                         height: 434
+                                         
+                                         });
+                  
+                  $( ".opener3" ).click(function() {
+                                        
+                                        $( "#dialog3" ).dialog( "open" );
+                                        
+                                        return false;
+                                        
+                                        });
+                  
+                  });
+                
+                </script>
+            <script>
+                
+                // increase the default animation speed to exaggerate the effect
+                
+                $.fx.speeds._default = 1000;
+                
+                $(function() {
+                  
+                  $( "#dialog4" ).dialog({
+                                         
+                                         autoOpen: false,
+                                         
+                                         show: "drop",
+                                         
+                                         hide: "drop",
+                                         
+                                         modal: true,
+                                         
+                                         width: 580,
+                                         
+                                         height: 434
+                                         
+                                         });
+                  
+                  $( ".opener4" ).click(function() {
+                                        
+                                        $( "#dialog4" ).dialog( "open" );
+                                        
+                                        return false;
+                                        
+                                        });
+                  
+                  });
+                
+                </script>
+            <script>
+                
+                // increase the default animation speed to exaggerate the effect
+                
+                $.fx.speeds._default = 1000;
+                
+                $(function() {
+                  
+                  $( "#dialog5" ).dialog({
+                                         
+                                         autoOpen: false,
+                                         
+                                         show: "drop",
+                                         
+                                         hide: "drop",
+                                         
+                                         modal: true,
+                                         
+                                         width: 580,
+                                         
+                                         height: 434
+                                         
+                                       
+                                         });
+                  
+                  $( ".opener5" ).click(function() {
+                                        
+                                        $( "#dialog5" ).dialog( "open" );
+                                        
+                                    
+                                        return false;
+                                        
+                                        });
+                  
+                  });
+                
+                </script>
+            <script>
+                
+                // increase the default animation speed to exaggerate the effect
+                
+                $.fx.speeds._default = 1000;
+                
+                $(function() {
+                  
+                  $( "#dialog6" ).dialog({
+                                         
+                                         autoOpen: false,
+                                         
+                                         show: "drop",
+                                         
+                                         hide: "drop",
+                                         
+                                         modal: true,
+                                         
+                                         width: 580,
+                                         
+                                         height: 434
+                                         
+                                         });
+                  
+                  $( ".opener6" ).click(function() {
+                                        
+                                        $( "#dialog6" ).dialog( "open" );
+                                        
+                                        return false;
+                                        
+                                        });
+                  
+                  });
+                
+                </script>
+            
+            <script type="text/javascript" language="JavaScript">
+                
+                function clickedButton()
+                
+                {
+                    
+                    window.location = 'index.html'
+                    document.getElementById('password').value = ""
+                    
+                    
+                }
+                
+                </script>
+                    
+           <script type="text/javascript">
+                        
+                        function onBodyLoad()
+                        {
+                
+                            document.addEventListener("deviceready", onDeviceReady, false);
+                            
+                        }
+                        
+                        function onDeviceReady()
+                        { 
+                            PGExternalScreen.setupScreenConnectionNotificationHandlers( resultHandler, errorHandler );
+                        
+                        }
+                        
+                        function resultHandler (result) {
+                            //dislpay an alert using a timeout so that it doesn't block loading of the webView content
+                             
+                            setTimeout( function() { alert("SUCCESS: \r\n"+result) }, 100 );
+                        }
+                        
+                        function errorHandler (error) {
+                            
+                            alert("ERROR: \r\n"+error);
+                        }
+                        </script>
+                    <script type="text/javascript" language="JavaScript">
+               
+                        function takeScreenShot() {
+                         Cordova.exec("Screenshot.saveScreenshot", true, "returnScreenshotImage");
+                  
+                        }
+               
+                        //function returnScreenshotImage(image) {
+                          //  alert("I'm in return Screenshot Image");
+                            //base64string = "data:image/png;base64,"+image;
+                           // $("#image_container").css("background-image", "url("+base64string+")");
+                            
+                        //}
+                        
+                    </script>          
+                   
+
+
+	</head>
+
+	<body onload="onBodyLoad()">
+
+		<div id="wrapper">
+
+			<input id="btnback" type="button" value="Login" onClick="clickedButton()"/>
+
+			<!--<a id="btnback" href="#back"><img src="img/btnback.png" height="25" width="71" alt="back button"></a>-->
+
+			<!--<div id="holder">
+
+				<ul id="periodtabs" class="menu">
+
+					<li><a href="#nogo"><img src="img/period1.png" width="45" height="25" alt="1st Period"></a></li>
+
+					<li><a href="#nogo"><img src="img/period2.png" width="45" height="25" alt="2nd Period"></a></li>
+
+					<li><a href="#nogo"><img src="img/period3.png" width="45" height="25" alt="3rd Period"></a></li>
+
+					<li><a href="#nogo"><img src="img/period4.png" width="45" height="25" alt="4th Period"></a></li>
+
+					<li><a href="#nogo"><img src="img/period5.png" width="45" height="25" alt="5th Period"></a></li>
+
+					<li><a href="#nogo"><img src="img/period6.png" width="45" height="25" alt="6th Period"></a></li>
+
+				</ul>
+
+			</div>-->
+
+			<!-- end #menu -->
+
+			
+
+			<div id="contentwrapper">
+
+				<div id="content">
+
+					<div id="tabs">
+
+						<ul id="tabsul">
+
+							<li id="tab1" class="tabsli"><a href="#tabs-1">1st</a></li>
+
+							<li class="tabsli"><a href="#tabs-2">2nd</a></li>
+
+							<li class="tabsli"><a href="#tabs-3">3rd</a></li>
+
+							<li class="tabsli"><a href="#tabs-4">4th</a></li>
+
+							<li class="tabsli"><a href="#tabs-5">5th</a></li>
+                            
+                            <li class="tabsli"><a href="#tabs-6">6th</a></li>
+
+						</ul>
+
+						<div class="thetabs" id="tabs-1">
+
+							<div id="section-lessonplan">
+
+								<h2 class="titles">Lesson Plan</h2>
+
+								<div>
+
+									<!--<div class="subsection">
+
+										<span>Goals</span>
+
+									</div>-->
+
+									<h3>Math Kindergarten Common Core Standards</h3>
+                                    <br />
+									<p><strong>MCCK.NBT.1</strong> Compose and decompose numbers from 11 to 19 into ten ones and some further ones, e.g., by using objects or drawings, and record each composition or decomposition by a drawing or equation (e.g., 18 = 10 + 8); understand that these numbers are composed of ten ones and one, two, three, four, five, six, seven, eight, or nine ones.</p>
+                                    <p><strong>MCCK.CC.4 a. </strong>When counting objects, say the number names in the standard order, pairing each object with one and only one number name and each number name with one and only one object.</p>
+                                    
+                                    <p><strong>MCCK.CC.6 </strong>Identify whether the number of objects in one group is greater than, less than, or equal to the number of objects in another group, e.g., by using matching and counting strategies. </p>
+                                    <br />
+                                    
+                                    <h3>Number Corner</h3>
+									<ol>
+
+										<li>Create a number on a ten frame.</li>
+                                        <li>Invite students to discuss and share everything they notice about the number.
+                                            Example if the number 8 is on the 10 frame.
+                                            3 more than 5
+                                            2 less than 10
+                                            4 groups of 2 
+                                            2 groups of 3 and 2 more 3 groups of 2 and
+                                            2 more 2 groups of 4 </li>
+
+										<li>Riddle for “8”- I am a number. I am more than 5. If you give me 2 more dots I would make a 10? I am a 1-digit number. What number am I?</li>
+									</ol>
+
+									<br>
+
+									<br>
+
+									<h3>Materials:</h3>
+
+									<p>Riddle Me This? task cards, Single or Double Ten Frame, Counters, iPad</p>
+
+									<br>
+
+                                
+
+								</div>
+
+							</div>
+
+							<div id="section-classwork">
+
+								<h2 class="titles">Classwork</h2>
+
+								<div>
+
+                                
+
+                                
+                                    <div id="dialog" title="Counting to 20">
+                                        <p><iframe src="http://www.showme.com/sma/embed/?s=lG8u2Wu&w=580&h=434" width="580" height="434" ></iframe></p>
+                                        
+                                    </div>
+                                    <p class="icon">
+                                    
+                                    <a class="opener">
+                                        
+                                        <img src="img/movieplayer.png" width="22" height="22" alt="movie player icon"></a>
+                                    
+                                    &nbsp; <a class="opener">Watch video on counting to 20</a>
+                                    
+									</p><br />
+									
+
+								</div>
+
+							</div>
+
+							<div id="section-homework">
+
+								<h2 class="titles">Homework</h2>
+
+								<div>
+
+									<p>Write numbers 0-20</p>
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="thetabs" id="tabs-2">
+
+							<div id="section-lessonplan">
+
+								<h2 class="titles">Lesson Plan</h2>
+
+								<div>
+
+									<!--<div class="subsection">
+
+										<span>Goals</span>
+
+									</div>-->
+                                    <h3><strong>Science 6 - 12 Common Core Standards</strong></h3>
+									
+                                    <p>College and Career Readiness Anchor Standards for Reading:</p>
+                                    <p><strong>Standard 7.</strong> Integrate and evaluate content presented in diverse media and formats, including visually and quantitatively, as well as in words.</p>
+                                    <p>College and Career Readiness Anchor Standards for Writing:</p>
+                                    <p><strong>Standard 6.</strong> Use technology, including the Internet, to produce and publish writing and to interact and collaborate with others.</p>
+                                    <p><strong>Standard 7.</strong> Conduct short as well as more sustained research projects based on focused questions, demonstrating understanding of the subject under investigation.</p>
+
+									<br>
+                                    
+                                    
+                                    <p><strong>Overview:</strong></p>
+                                    <p>Understanding how the world around them can be organized or classified is an important concept for students. This lesson starts with a general discussion about classification and then moves to a description of scientific classification. Using the Linnaean system, the most widely used classification system in the scientific community, students will develop mind maps as they conduct research on different kingdoms and the organisms classified within them.</p>
+                                    <br />
+                                    <p>Mind maps have an organic appearance, like a tree with many branches. They are quick to create because the structure is always the same and Inspiration’s mind mapping tools are efficient to use. With a central trunk (main idea), the thickest branches are main subtopics, and the thinner branches are subtopics of those. These visual cues help students as they mind map prior knowledge and build new knowledge.</p>
+                                    <br />
+                                    <p>
+                                    <p><strong>Lesson:</srong></p><br />
+                                        <p>1. Begin by asking students if they know what it means to classify and how they might classify things in their everyday lives. For example, how might they classify forms of writing, nations of the world or types of lab equipment?</p><br />
+                                        <p> 2. Quickly classify everyday things from one of the categories you discussed. For example, type “Lab Equipment” in the middle and fill in three categories, such as “protective gear,” “measuring devices” and “energy sources.”</p><br />
+                                        <p>3. Explain that students will be learning about a system for classifying organisms (living things). Tell them that there are different systems for classifying organisms, but that a system originally developed by a scientist named Carl Linnaeus is the most common. Later, scientists expanded upon his original system, to arrive at the six kingdoms of life we have today. Explain that the science of classifying living things is known as taxonomy.</p><br />
+                                        <p>4. Students will be preparing mind maps similar to the one that describes characteristics of the kingdoms and examples of organisms classified in them.</p><br />
+                                        <p>5. Have students begin the research process using online sources or textbooks. As they gather information, they can use it to complete the mind map.</p><br />
+                                        
+                                        <p>6. Lead a class discussion about the students’ findings. What interesting discoveries did they
+                                        make? Why is classification very important for scientists?</p><br />
+                                        </p>
+									
+                                    
+                                    
+                                    <h3>Materials:</h3>
+
+									<p>Textbook, Mind Maps, iPad</p>
+
+									<br>
+
+									
+
+								</div>
+
+							</div>
+
+							<div id="section-classwork">
+
+								<h2 class="titles">Classwork</h2>
+
+								<div>
+
+                                    <div id="dialog1" title="Animal Classifications">
+                                        <p><iframe width="500" height="375" src="http://www.schooltube.com/embed/8fb125d2cf121969e06b" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe></p>
+                                        
+                                    </div>
+                                    <p class="icon">
+                                    
+                                    <a class="opener1">
+                                        
+                                        <img src="img/movieplayer.png" width="22" height="22" alt="movie player icon"></a>
+                                    
+                                    &nbsp; <a class="opener1">Watch video on Animal Classifications</a>
+                                    
+									</p>
+
+									<p>Complete mind maps</p>
+
+									
+
+								</div>
+
+							</div>
+
+							<div id="section-homework">
+
+								<h2 class="titles">Homework</h2>
+
+								<div>
+
+									<p>Write an essay about the kingdoms and organisms  identified in class. </p>
+
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="thetabs" id="tabs-3">
+
+							<div id="section-lessonplan">
+
+								<h2 class="titles">Lesson Plan</h2>
+
+								<div>
+
+									<!--<div class="subsection">
+
+										<span>Goals</span>
+
+									</div>-->
+
+									<h3>Social Studies 6 - 12 Common Core Standards</h3>
+
+									<p>
+                                    Students will research a civilization and analyze its historical influence.</p>
+                                    <p><strong>Common Core State Standards:</strong></p>
+                                    <p>College and Career Readiness Anchor Standards for Reading:<br />
+                                    Standard 7. Integrate and evaluate content presented in diverse media and formats, including visually and quantitatively, as well as in words.</p><br />
+                                    <p>College and Career Readiness Anchor Standards for Writing:<br />
+                                    Standard 1. Write arguments to support claims in an analysis of substantive topics or texts
+                                    using valid reasoning and relevant and sufficient evidence.<br />
+                                    Standard 6. Use technology, including the Internet, to produce and publish writing and to
+                                    ￼interact and collaborate with others.</p>
+
+									
+
+									<br>
+
+									<h3>Lesson:</h3>
+
+									<p>
+                                    1. Explain that students will be investigating many aspects of a civilization with the goal of describing its “legacy.” Ask students if they know what a legacy is, and be sure to clarify that one meaning of the word is something from the past that influences the future.<br />
+                                    2. Open the Legacy of a Civilization template and talk students through it so they understand the assignment; they will be conducting research focused on the civilization’s legacy and using the template to help them organize the information.<br />
+                                    3. Open the example file in this folder and talk the students through that, as well, so they know what is expected. Explain that they will be adding visual symbols, as well as text, to their diagrams. Adding symbols will help them and their readers to better understand and remember the content.<br />
+                                    4. Students can start writing their draft.
+                                    </p>
+
+									<br>
+
+									<h3>Materials:</h3>
+
+									<p>Textbook, iPad</p>
+
+									<br>
+
+								</div>
+
+							</div>
+
+							<div id="section-classwork">
+
+								<h2 class="titles">Classwork</h2>
+                                <div>
+                                    
+                                    
+                                    
+                                    
+                                    <div id="dialog2" title="Civilization">
+                                        <p><iframe width="580" height="434" src="http://www.youtube-nocookie.com/embed/6PR6C4UeYU8" frameborder="0" allowfullscreen></iframe></p>
+                                        
+                                    </div>
+                                    <p class="icon">
+                                    
+                                    <a class="opener2">
+                                        
+                                        <img src="img/movieplayer.png" width="22" height="22" alt="movie player icon"></a>
+                                    
+                                    &nbsp; <a class="opener2">Watch video on ancient civilizations</a>
+                                    
+									</p><br />
+                                
+                                        
+                                    <p>Write a short essay about the legacy of the civilization</p>
+									
+                                    
+								</div>
+                                
+							</div>
+
+
+
+							<div id="section-homework">
+
+								<h2 class="titles">Homework</h2>
+
+								<div>
+
+									<p>Create timelines of important developments in the history of the civilization. </p>
+
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="thetabs" id="tabs-4">
+
+							<div id="section-lessonplan">
+
+								<h2 class="titles">Lesson Plan</h2>
+
+								<div>
+
+									<!--<div class="subsection">
+
+										<span>Goals</span>
+
+									</div>-->
+
+									<h3><strong>Writing 6 -12 Common Core State Standards:</strong></h3>
+
+									<p>
+                                    Writing Standards for Grades 6-12 in English Language Arts and Literacy in History/Social Studies, Science, and Technical Subjects<br />
+                                    
+                                   <strong> Standard 3.</strong> Write narratives to develop real or imagined experiences or events using effective technique, well-chosen details and well-structured event sequences.<br />
+                                    <strong>Standard 5. </strong>Develop and strengthen writing as needed by planning, revising, editing, rewriting, or trying a new approach.<br />
+                                    <strong>Standard 6.</strong> Use technology, including the Internet, to produce and publish writing and to interact and collaborate with others.</p>
+
+
+									<br>
+
+									<h3><strong>Lesson:</strong></h3>
+
+									<p>1. Explain that writing is a process involving many steps. Open the Writing Process template in this folder and discuss the steps with students in detail: prewriting, drafting, revising, editing and publishing.<br />
+                                    2. Explain that the best narrative writing is rich in specific details and dialogue.<br />
+                                    
+                                    </p>
+
+									<br>
+
+									<h3>Materials:</h3>
+
+									<p>Textbook, worksheets, iPad</p>
+
+									<br>
+
+
+								</div>
+
+							</div>
+
+							<div id="section-classwork">
+
+								<h2 class="titles">Classwork</h2>
+
+								<div>
+
+									<p>
+                                    
+
+									
+                                    <div id="dialog3" title="Brainstorming">
+                                        <p><iframe width="580" height="434" src="http://www.youtube-nocookie.com/embed/DSnQLiwK62Y" frameborder="0" allowfullscreen></iframe></p>
+                                        
+                                    </div>
+                                    <p class="icon">
+                                    
+                                    <a class="opener3">
+                                        
+                                        <img src="img/movieplayer.png" width="22" height="22" alt="movie player icon"></a>
+                                    
+                                    &nbsp; <a class="opener3">Watch video on Brainstorming</a>
+                                    
+									</p><br />
+
+									</p>
+                                    <br />
+									<p>Read narratives to the class and include visuals such as “talking points” and “snapshots” from your diagrams.</p>
+
+									
+
+								</div>
+
+							</div>
+
+							<div id="section-homework">
+
+								<h2 class="titles">Homework</h2>
+
+								<div>
+
+									<p>
+                                    Write a one page non-fiction narrative about your own lives or fictional or historical narrative to demonstrate your knowledge of real persons or events.
+                                    Write a personal narrative for college applications, that is a “reflection” to explain what you learned from the experience or what the experience reveals about them.</p>
+
+									
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="thetabs" id="tabs-5">
+
+							<div id="section-classwork">
+
+								<h2 class="titles">Classwork</h2>
+
+								<div>
+
+									<p>
+                                    <div id="dialog4" title="The Solar System">
+                                        <p><iframe scrolling="yes" width="580" height="434" src="http://www.youtube-nocookie.com/embed/XrHMH94Mrk0" frameborder="0" allowfullscreen></iframe></p>
+                                        
+                                    </div>
+                                    <p class="icon">
+                                    
+                                    <a class="opener4">
+                                        
+                                        <img src="img/movieplayer.png" width="22" height="22" alt="movie player icon"></a>
+                                    
+                                    &nbsp; <a class="opener4">Watch video on Solar System</a>
+                                    
+									</p><br />
+                                    
+                                   
+                                    <p><strong>Complete eLearn Assignment</strong></p>
+                                    
+                                    <p>
+                                    <div id="dialog5" title="Trip to Moon Article" >
+                                        <p>Attention wealthy nations and billionaires: A team of former NASA executives will fly you to the moon in an out-of-this-world commercial venture combining the wizardry of Apollo and the marketing of Apple.<p/>
+                                        
+                                        <p>For a mere $1.5 billion, the business is offering countries the chance to send two people to the moon and back, either for research or national prestige. And if you are an individual with that kind of money to spare, you too can go the moon for a couple days.</p>
+                                        
+                                        <p>Some space experts, though, are skeptical of the firm's financial ability to get to the moon. The venture called Golden Spike Co. was announced Thursday.</p>
+                                        
+                                        <p>Dozens of private space companies have started up recently, but few if any will make it — just like in other fields — said Harvard astronomer Jonathan McDowell, who tracks launches worldwide.</p>
+                                        
+                                        <p>"This is unlikely to be the one that will pan out," McDowell said.</p>
+                                        
+                                        <p>NASA's last trip to the moon launched 40 years ago Friday. The United States is the only country that has landed people there, beating the Soviet Union in a space race to the moon that transfixed the world. But once the race ended, there has been only sporadic interest in the moon.</p>
+                    
+                                        
+                                        
+                                    </div>
+                                    <p class="icon">
+                                    
+                                    <a class="opener5">
+                                        
+                                        <img src="img/movieplayer.png" width="22" height="22" alt="movie player icon"></a>
+                                    
+                                    &nbsp; <a class="opener5">Read Article</a>
+                                    
+									</p><br />
+                                    </p>
+                                    <p>
+                                    <div id="dialog6" title="Trip to Moon News Brief">
+                                        <p><iframe frameborder="0" scrolling="no" src="http://eplayer.clipsyndicate.com/embed/iframe?pf_id=1&show_title=0&va_id=3860137&windows=1" width="425" height="330"></iframe></p>
+                                        
+                                    </div>
+                                    <p class="icon">
+                                    
+                                    <a class="opener6">
+                                        
+                                        <img src="img/movieplayer.png" width="22" height="22" alt="movie player icon"></a>
+                                    
+                                    &nbsp; <a class="opener6">Watch video on Trip to Space</a>
+                                    
+									</p><br />
+									</p>
+
+									
+
+								</div>
+
+							</div>
+
+							<div id="section-homework">
+
+								<h2 class="titles">Homework</h2>
+
+								<div>
+                                    <p>
+                                    
+                                    
+                                    <p><a href="ibooks://the-beatles-yellow-submarine/id479687204?mt=11">Read Solar Sytem, pages 2 - 21</a></p>
+                                    
+                                    <p>Complete worksheets 2 and 3 using <a href="astronomy://">the Pocket Universe</a></p>
+                                    
+                                    <br />
+                                    
+									</p>
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="thetabs" id="tabs-6">
+
+							
+							<div id="section-classwork">
+
+								<h2 class="titles">Classwork</h2>
+
+								<div>
+
+									<p>
+
+										<p class="icon"><a href="http://www.showme.com/sma/embed/?s=3JvrTeK">
+
+											<img src="img/movieplayer.png" width="22" height="22" alt="Movie Player icon"></a>
+
+											&nbsp; <a href="http://www.showme.com/sma/embed/?s=3JvrTeK">Watch a video on classifying triangles</a>
+
+										</p>
+
+									</p>
+
+									<p>Complete worksheets</p>
+
+									<br />
+                                    <button onclick="takeScreenShot()">Take Screenshot</button>
+                                    <br />
+                                    <a href="javascript: window.Plugins.Screenshot.saveScreenshotAsFile()"
+                                    <br />
+                                    <ol>
+                                        
+                                        <li><a href="javascript:PGExternalScreen.checkExternalScreenAvailable( resultHandler, errorHandler )">Check isExternalScreenAvailable</a></li>
+                                        <li><a href="javascript:PGExternalScreen.loadHTMLResource( 'astronomy://', resultHandler, errorHandler )">Load local file: astronomy</a></li>
+                                        
+                                        <li><a href="javascript:PGExternalScreen.loadHTMLResource( 'http://www.youtube-nocookie.com/embed/XrHMH94Mrk0 ',resultHandler, errorHandler )">Load Video</a></li>
+                                        <li><a href="javascript:PGExternalScreen.loadHTML('
+                                            
+                                            <h2 class="titles">Lesson Plan</h2>
+                                          
+                                            
+                                            <h3><strong>Writing 6 -12 Common Core State Standards:</strong></h3>
+                                            
+                                            <p>
+                                            Writing Standards for Grades 6-12 in English Language Arts and Literacy in History/Social Studies, Science, and Technical Subjects<br />
+                                            
+                                            <strong> Standard 3.</strong> Write narratives to develop real or imagined experiences or events using effective technique, well-chosen details and well-structured event sequences.<br />
+                                            <strong>Standard 5. </strong>Develop and strengthen writing as needed by planning, revising, editing, rewriting, or trying a new approach.<br />
+                                            <strong>Standard 6.</strong> Use technology, including the Internet, to produce and publish writing and to interact and collaborate with others.</p>
+                                            
+                                            
+                                            <br>
+                                            
+                                            <h3><strong>Lesson:</strong></h3>
+                                            
+                                            <p>1. Explain that writing is a process involving many steps. Open the Writing Process template in this folder and discuss the steps with students in detail: prewriting, drafting, revising, editing and publishing.<br />
+                                            2. Explain that the best narrative writing is rich in specific details and dialogue.<br />
+                                            
+                                            </p>
+                                            
+                                            <br>
+                                            
+                                            <h3>Materials:</h3>
+                                            
+                                            <p>Textbook, worksheets, iPad</p>
+                                            
+                                            <br>
+', resultHandler, errorHandler )">Load Lesson Plan</a></li>
+                                        <li><a href="javascript:PGExternalScreen.invokeJavaScript('document.write(\'Hello BCSD Classroom Room\')', resultHandler, errorHandler )">Invoke JavaScript: document.write("hello BCSD")</a></li>
+                                    </ol>
+
+								</div>
+
+							</div>
+
+							<div id="section-homework">
+
+								<h2 class="titles">Homework</h2>
+
+								<div>
+                                     
+                                    <p id="deviceProperties">Loading device properties...</p>
+									<p>Read Chapter 4</p>
+
+									<p>Study Section 4.1 &amp; Section 4.2 for quiz tomorrow</p>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<!-- end #content -->
+
+				
+
+				<div id="sidebar">
+
+					<h2 class="titles">Students</h2>
+
+					<div id="studentlist">
+
+						<a class="student" href="#student1">
+
+							<span>
+
+								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">
+
+								<p>George A.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student2">
+
+							<span>
+
+								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">
+
+								<p>Tiffany A.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student1">
+
+							<span>
+
+								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">
+
+								<p>Billy C.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student2">
+
+							<span>
+
+								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">
+
+								<p>Dora E.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student1">
+
+							<span>
+
+								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">
+
+								<p>Jon E.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student2">
+
+							<span>
+
+								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">
+
+								<p>Sharon G.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student1">
+
+							<span>
+
+								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">
+
+								<p>Abigail I.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student2">
+
+							<span>
+
+								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">
+
+								<p>Doug J.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student1">
+
+							<span>
+
+								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">
+
+								<p>Candace J.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student2">
+
+							<span>
+
+								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">
+
+								<p>Crystal L.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student1">
+
+							<span>
+
+								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">
+
+								<p>Mike M.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student2">
+
+							<span>
+
+								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">
+
+								<p>Tammy M.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student1">
+
+							<span>
+
+								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">
+
+								<p>Will N.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student2">
+
+							<span>
+
+								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">
+
+								<p>Cindy Q.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student1">
+
+							<span>
+
+								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">
+
+								<p>Tyler R.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student2">
+
+							<span>
+
+								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">
+
+								<p>April R.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student1">
+
+							<span>
+
+								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">
+
+								<p>Zac S.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student2">
+
+							<span>
+
+								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">
+
+								<p>Tiffany S.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student1">
+
+							<span>
+
+								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">
+
+								<p>Jean T.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student2">
+
+							<span>
+
+								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">
+
+								<p>Gregg T.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student1">
+
+							<span>
+
+								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">
+
+								<p>Carl U.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student2">
+
+							<span>
+
+								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">
+
+								<p>Trisha V.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student1">
+
+							<span>
+
+								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">
+
+								<p>Grant V.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student2">
+
+							<span>
+
+								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">
+
+								<p>William W.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student1">
+
+							<span>
+
+								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">
+
+								<p>Frank W.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student2">
+
+							<span>
+
+								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">
+
+								<p>Lloyd W.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student1">
+
+							<span>
+
+								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">
+
+								<p>Peter W.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student2">
+
+							<span>
+
+								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">
+
+								<p>Sarah Y.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student1">
+
+							<span>
+
+								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">
+
+								<p>Joseph Y.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student2">
+
+							<span>
+
+								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">
+
+								<p>Sarah Z.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student1">
+
+							<span>
+
+								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">
+
+								<p>Isaiah A.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student2">
+
+							<span>
+
+								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">
+
+								<p>Mary D.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student1">
+
+							<span>
+
+								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">
+
+								<p>Jeremy F.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student2">
+
+							<span>
+
+								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">
+
+								<p>Martha G.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student1">
+
+							<span>
+
+								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">
+
+								<p>Eli M.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student2">
+
+							<span>
+
+								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">
+
+								<p>Deborah M.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student1">
+
+							<span>
+
+								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">
+
+								<p>Larry R.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student2">
+
+							<span>
+
+								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">
+
+								<p>Ruth S.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student1">
+
+							<span>
+
+								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">
+
+								<p>Roberto S.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student2">
+
+							<span>
+
+								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">
+
+								<p>Naomi T.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student1">
+
+							<span>
+
+								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">
+
+								<p>Dan T.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student2">
+
+							<span>
+
+								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">
+
+								<p>Jasmine W.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student1">
+
+							<span>
+
+								<img src="img/studentbox-boy.png" width="112" height="50" alt="studentbox-boy">
+
+								<p>Adam W.</p>
+
+							</span>
+
+						</a>
+
+						<a class="student" href="#student2">
+
+							<span>
+
+								<img src="img/studentbox-girl.png" width="112" height="50" alt="studentbox-girl">
+
+								<p>Brittany Y.</p>
+
+							</span>
+
+						</a>
+
+						
+
+						
+
+						<!--a<br>
+
+						b<br>
+
+						c<br>
+
+						d<br>
+
+						e<br>
+
+						f<br>
+
+						g<br>
+
+						h<br>
+
+						i<br>
+
+						j<br>
+
+						k<br>
+
+						l<br>
+
+						m<br>
+
+						n<br>
+
+						o<br>
+
+						p<br>
+
+						q<br>
+
+						r<br>
+
+						s<br>
+
+						t<br>
+
+						u<br>
+
+						v<br>
+
+						w<br>
+
+						x<br>
+
+						y<br>
+
+						z<br>
+
+						a<br>
+
+						b<br>
+
+						c<br>
+
+						d<br>
+
+						e<br>
+
+						f<br>
+
+						g<br>
+
+						h<br>
+
+						i<br>
+
+						j<br>
+
+						k<br>
+
+						l<br>
+
+						m<br>
+
+						n<br>
+
+						o<br>
+
+						p<br>
+
+						q<br>
+
+						r<br>
+
+						s<br>
+
+						t<br>
+
+						u<br>
+
+						v<br>
+
+						w<br>
+
+						x<br>
+
+						y<br>
+
+						z-->
+
+					</div>
+
+				</div>
+
+				<!-- end #sidebar -->
+
+			</div>
+
+			<div class="clear"></div>
+
+		</div>
+
+		<!-- end #wrapper -->
+
+	</body>
+
+</html>
+
