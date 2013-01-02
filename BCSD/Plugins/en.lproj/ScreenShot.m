@@ -1,50 +1,55 @@
 //
-//  Screenshot.h
-//
 //  Created by Simon Madine on 29/04/2010.
 //  Copyright 2010 The Angry Robot Zombie Factory.
+//   - Converted to Cordova 1.6.1 by Josemando Sobral.
 //  MIT licensed
 //
 //  Modifications to support orientation change by @ffd8
 //
 
 #import "Screenshot.h"
+
 @implementation Screenshot
+
+@synthesize webView;
 
 - (void)saveScreenshot:(NSArray*)arguments withDict:(NSDictionary*)options
 {
-    
-    CGRect screenRect = [[UIScreen mainScreen] bounds];
     CGRect imageRect;
+	CGRect screenRect = [[UIScreen mainScreen] bounds];
     
-    //change with orientation
-    UIInterfaceOrientation orientation = [[UIDevice currentDevice] orientation];
-    if (orientation == UIInterfaceOrientationPortrait || orientation == UIInterfaceOrientationPortraitUpsideDown) {
-        //portrait check
-        imageRect = CGRectMake(0, 0, CGRectGetWidth(screenRect), CGRectGetHeight(screenRect));
-    }else if(orientation == UIInterfaceOrientationLandscapeLeft || orientation == UIInterfaceOrientationLandscapeRight) {
-        //landscape check
-        imageRect = CGRectMake(0, 0, CGRectGetHeight(screenRect), CGRectGetWidth(screenRect));
-    }else{
-        //default with portrait (after tests.. worked best with this code here)
-        imageRect = CGRectMake(0, 0, CGRectGetWidth(screenRect), CGRectGetHeight(screenRect));
-    }
+	// statusBarOrientation is more reliable than UIDevice.orientation
+	UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
+    
+	if (orientation == UIInterfaceOrientationLandscapeLeft || orientation == UIInterfaceOrientationLandscapeRight) {
+		// landscape check
+		imageRect = CGRectMake(0, 0, CGRectGetHeight(screenRect), CGRectGetWidth(screenRect));
+	} else {
+		// portrait check
+		imageRect = CGRectMake(0, 0, CGRectGetWidth(screenRect), CGRectGetHeight(screenRect));
+	}
+    
+	// Adds support for Retina Display. Code reverts back to original if iOs 4 not detected.
+	if (NULL != UIGraphicsBeginImageContextWithOptions)
+        UIGraphicsBeginImageContextWithOptions(imageRect.size, NO, 0);
+    else
+        UIGraphicsBeginImageContext(imageRect.size);
     
     
-    UIGraphicsBeginImageContext(imageRect.size);
+	CGContextRef ctx = UIGraphicsGetCurrentContext();
+	[[UIColor blackColor] set];
+	CGContextTranslateCTM(ctx, 0, 0);
+	CGContextFillRect(ctx, imageRect);
     
-    CGContextRef ctx = UIGraphicsGetCurrentContext();
-    [[UIColor blackColor] set];
-    CGContextTranslateCTM(ctx, 0, 0);
-    CGContextFillRect(ctx, imageRect);
+	[webView.layer renderInContext:ctx];
     
-    [self.webView.layer renderInContext:ctx];
+	UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+	UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
+	UIGraphicsEndImageContext();
     
-    UIImage *image1 = UIGraphicsGetImageFromCurrentImageContext();
-    UIImageWriteToSavedPhotosAlbum(image1, nil, nil, nil);
-    UIGraphicsEndImageContext();
-    UIAlertView *alert= [[UIAlertView alloc] initWithTitle:nil message:@"Image Saved" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    [alert show];
-    [alert release];
+	//UIAlertView *alert= [[UIAlertView alloc] initWithTitle:nil message:@"Image Saved" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+	//[alert show];
+	//[alert release];
 }
+
 @end
