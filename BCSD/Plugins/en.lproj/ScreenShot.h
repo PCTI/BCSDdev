@@ -8,13 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <QuartzCore/QuartzCore.h>
-#ifdef PHONEGAP_FRAMEWORK
-#import <Cordova/CDVPlugin.h>
-#else
-#import <Cordova/CDVPlugin.h>
-#endif
+#import <Cordova/CDV.h>
 @interface Screenshot : CDVPlugin {
 }
 
 - (void)saveScreenshot:(NSArray*)arguments withDict:(NSDictionary*)options;
+//- (void)saveScreenshotAsFile:(NSArray*)arguments withDict:(NSDictionary*)options;
 @end
